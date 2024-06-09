@@ -3,3 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding-top: 5rem;
+}
+
+.app {
+  text-align: center;
+}
+
+.search-results,
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  width: 200px;
+}
+
+.book-card h3 {
+  margin: 0;
+}
+
+.book-card p {
+  margin: 8px 0;
+}
+
+.book-card button {
+  margin-top: 8px;
+}
