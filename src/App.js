@@ -30,11 +30,16 @@ const App = () => {
   return (
     <div className="app">
       <h1>Book Search</h1>
-      <SearchBar query={query} setQuery={setQuery} />
+      <div className="search-nav">
+        <SearchBar query={query} setQuery={setQuery} />
+        <button
+          className="btn btn-primary"
+          onClick={() => (window.location.href = "/bookshelf")}
+        >
+          Go to My Bookshelf
+        </button>
+      </div>
       <SearchResults books={books} addToBookshelf={addToBookshelf} />
-      <button onClick={() => (window.location.href = "/bookshelf")}>
-        Go to My Bookshelf
-      </button>
     </div>
   );
 };

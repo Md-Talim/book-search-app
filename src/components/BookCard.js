@@ -1,9 +1,16 @@
 const BookCard = ({ book, addToBookshelf }) => {
   return (
     <div className="book-card">
-      <h3>{book.title}</h3>
+      <h3 className="truncate" title={book.title}>
+        {book.title}
+      </h3>
       <p>{book.author_name ? book.author_name.join(", ") : "Unknown Author"}</p>
-      <button onClick={() => addToBookshelf(book)}>Add to Bookshelf</button>
+      <button
+        className="btn btn-secondary"
+        onClick={() => addToBookshelf(book)}
+      >
+        Add to Bookshelf
+      </button>
     </div>
   );
 };
