@@ -1,6 +1,21 @@
 # Book Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Book Search App is a web application that allows users to search for books using the Open Library API and manage their personal bookshelf. Users can type the name of a book into a search bar, view search results in real-time, and add their favorite books to a personal bookshelf. The bookshelf is stored persistently using the Web Storage API (localStorage), ensuring that users' selections are retained even after refreshing the page or closing the browser.
+
+## Features
+
+- **Real-Time Search**: As users type in the search bar, book results are fetched from the Open Library API and displayed dynamically.
+- **Book Details**: Each search result is presented in a card format, displaying the book's title and author(s).
+- **Add to Bookshelf**: Users can add books from the search results to their personal bookshelf with a single click.
+- **Persistent Bookshelf**: The bookshelf data is stored using localStorage, allowing users to retain their book list between sessions.
+- **Navigation**: Users can navigate between the search page and their personal bookshelf seamlessly.
+
+## Tech Stack
+
+- **React**: The app is built using React, providing a modern, component-based architecture.
+- **Axios**: Used for making HTTP requests to the Open Library API.
+- **React Router**: Enables navigation between the search page and the bookshelf page.
+- **Web Storage API**: localStorage is used to persist the bookshelf data
 
 ## Available Scripts
 
@@ -60,3 +75,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
    ```
 
 The app will be available at `http://localhost:3000`.
+
+## Deployment
+
+The app is deployed on Vercel at: https://book-search-app-xi.vercel.app/
